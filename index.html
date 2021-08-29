@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Dice Game</title>
+    </head>
+    <body>
+        <h1 id="tit">PIG DICE GAME</h1>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Jogador 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Pontos Nesta Rodada</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Jogador 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Pontos Nesta Rodada</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>Novo Jogo</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Jogar o Dado</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Passar a vez</button>
+            
+            <img src="dice-5.png" alt="Dado" class="dice" id="dice-1">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <center><input type="button" value="Ver Regras" id="mostrar"></center>
+        <br>
+        <center>
+            <div class="conteiner">
+              <h1>REGRAS DO JOGO</h1>
+              <br><br>
+              <p>- O jogo tem 2 jogadores, jogando em rodadas.</p>
+              <br>
+              <p>- Em cada rodada, um jogador joga um dado quantas vezes quiser. Cada resultado é adicionado à sua pontuação.</p>
+              <br>
+              <p>- Mas, se o jogador obtiver o valor 1 ao jogar o dado, toda a sua pontuação será perdida naquela rodada. Depois disso, é a vez do próximo jogador.</p>
+              <br>
+              <p>- O jogador pode optar por 'Passar a vez', o que significa que sua pontuação atual é adicionada à sua pontuação global. Depois disso, é a vez do próximo jogador.</p>
+              <br>
+              <p>- O primeiro jogador a atingir 100 pontos na pontuação global vence o jogo.</p>
+              <br>
+            </div>
+        </center>
+        
+        <script src="game.js"></script>
+        <script  defer src="regra.js"></script>
+        
+    </body>
+</html>
+
+<!--
+
+               
+               
+                
+                
+
+-->
